@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Create Account</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background-image: url('log.png');
+		background-repeat: no-repeat; /*so that the background image will not repeat itself*/
+		background-size: cover;  /*background image will be the size of our display*/
+		}
+	.box{
+		width: 400px;
+		padding: 40px;
+		position: absolute; /*position of our block will be nearest positioned ancestor*/
+		top: 50%; /*position from top*/
+		left: 50%; /*position from left*/
+		transform: translate(-50%,-50%); /*from right to left and bottom to top position*/
+		background: transparent;
+		text-align: center;
+	}
+	.box h1{
+		color: white;
+		text-transform: uppercase; /*desired text will be in uppercase*/
+		font-weight: 500;
+	}
+	.box input[type="text"],.box input[type="password"],input[type="email"]{
+		border: 0;
+		background: none;
+		display: block;
+		margin: 20px auto; /*browser will give the margin automaticlly*/
+		text-align: center;
+		border: 2px solid black;
+		padding: 14px 10px;
+		width: 250px;
+		outline: none; /*for no outline over the border*/
+		color: black;
+		border-radius: 25px; /*for better curving of our box*/
+		transition: 0.25s;  /*time delay */
+	}
+	.box input[type="text"]:hover,.box input[type="password"]:hover,input[type="email"]:hover{  /*on mouseover efect*/
+		width:350px;
+		border-color: #2ecc71;
+	}
+	.box input[type="submit"]{
+		border: 0;
+		background: none;
+		display: block;
+		margin: 20px auto;
+		text-align: center;
+		border: 2px solid #3498db;
+		padding: 14px 30px;
+		width: 100px;
+		outline: none;
+		color: white;
+		border-radius: 20px;
+		transition: 0.25s;
+		cursor: pointer;
+	}
+	.box  input[type="submit"]:hover{
+		background: #2ecc71;
+
+	}
+	</style>
+</head>
+<body>
+	<form class="box" action="login page.html" method="post">
+		<h1>Create Account</h1>
+		<input type="text" placeholder="Username" /required><hr/>
+		<input id="t1" type="email" placeholder="example@gmail.com" /required><hr/>
+		<input type="password" placeholder="Password" /required><hr/>
+		<input type="password" placeholder="Re-enter Password" /required><hr/>
+		<input type="submit" value="Submit"/required>
+	</form>
+
+</body>
+</html>

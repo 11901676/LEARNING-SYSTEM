@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url('log.png');
+	background-repeat: no-repeat; /*so that the background image will not repeat itself*/
+	background-size: cover; /*background image will be the size of our display*/
+}
+.box{
+	width: 300px;
+	padding: 40px;
+	position: absolute; /*position of our block will be nearest positioned ancestor*/
+	top: 50%;  /*position from top*/
+	left: 50%; /*position from left*/
+	transform: translate(-50%,-50%); /*from right to left and bottom to top position*/
+	background: transparent; 
+	text-align: center;
+}
+.box h1{
+	color: black;
+	text-transform: uppercase; /*desired text will be in uppercase*/
+	font-weight: 500; /*weight of our font*/
+}
+.box input[type="text"],.box input[type="password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto; /*browser will give the margin automaticlly*/
+	text-align: center;
+	border: 2px solid black;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none; /*for no outline over the border*/
+	color: black;
+	border-radius: 24px; /*for better curving of our box*/
+	transition: 0.25s; /*time delay */
+}
+.box input[type="text"]:hover,.box input[type="password"]:hover{ /*on mouseover efect*/
+	width: 280px;
+	border-color: #2ecc71;
+}
+.box input[type="submit"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid black;
+	padding: 14px 40px;
+	width: 130px;
+	outline: none;
+	color: black;
+	border-radius: 40px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box  input[type="submit"]:hover{
+	background: #2ecc71;
+
+}

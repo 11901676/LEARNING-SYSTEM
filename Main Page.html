@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Style the header */
+header {
+  background-color: #6a5acd;
+  padding: 5px 20px;
+  text-decoration: none; /*underline below the hyperlink will disappear*/
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  height: 70px;
+}
+header ul{
+  float: left;
+  list-style-type: none; /*list will be shown horizontally*/
+}
+header ul li{
+  display: inline-block;
+}
+header ul li a {
+  text-decoration: none; 
+  color: white;
+  padding: 5px 20px;
+  margin: 25px;
+  border: 1px solid white;
+
+}
+header ul li a:hover{
+background-color: white;
+color: black;
+
+}
+ul li.h a{
+  background-color: white;
+  color: black;
+}
+nav {
+  font-size: 20px;
+  float: left; /*text will be on the left corner of screen*/
+  width: 15%;
+  height: 430px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  margin: 25px;
+  border: 1px solid white;
+
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 430px;
+}
+section:after {
+  content: ""; /*replaces the element with generated value*/
+  display: table; /*Elements will behave like a <table> element*/
+  clear: both; /*floating the elements are not allowed to float both sides*/
+}
+section ul li a:hover{
+background-color: white;
+color: black;
+
+}
+/* Style the footer */
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  height: 160px
+}
+footer ul li{
+  float: left;
+  list-style-type: none;
+  padding: 30px;
+}
+table th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<header>
+  <ul>
+    <li ><img src="lms.png" align="left" height="40" width="40" alt="logo"></li>
+    <li class="h"><a href="Content.html" target="_self">Home</a></li>
+     <li><a href="videos.html" target="_self">Videos</a></li>
+     <li><a href="Tutors info.html" target="_self">Tutors</a></li>
+     <li><a href="Test.html" target="_self">Test yourself</a></li>
+     <li style="color:black;font-size: 30px;font-family: AR JULIAN">Welcome To Our Learning Platform</li>
+     <li><a href="login page.html" target="_parent">Logout</a></li>
+  </ul>
+</header>
+<section>
+  <nav>
+    <p align="center" style="font-family: Agency FB"><b>TOPICS</b><br>
+    Click on the following topics to learn(Online)</p><br><br>
+    <ul>
+      <li><a href="HTML content.html" style="font-family: Agency FB">HTML</a></li><br>
+      <li><a href="CSS content.html" style="font-family: Agency FB">CSS</a></li><br>
+      <li><a href="JavaSCript content.html"  style="font-family: Agency FB">Java Script</a></li><br>
+      <li><a href="PHP content.html" style="font-family: Agency FB">PHP</a></li><br>
+      <li><a href="Sql content.html" style="font-family: Agency FB">SQL</a></li>
+    </ul>
+  </nav>
+  
+  <article style="background-color: grey">
+    <h1 style="font-family: Agency FB;text-align: center">SUBJECT INFO</h1>
+    <p style="font-family: Agency FB;padding: 10px;color: white">HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. CSS is used to control presentation, formatting, and layout. JavaScript is used to control the behavior of different elements. PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications. SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database. Here is the description of topic in our course click on the topics which you want to learn about!!</p>
+    <iframe height="300px" width="1100px" src="Content Page.html" name="iframe_a"></iframe>
+<p><a href="fpro8.html" target="iframe_a"></a></p>
+  </article>
+</section>
+<footer>
+  <div>
+    <ul>
+      <li><h2 style="font-family: Agency FB;color: grey;font-size: 20px">Quick links</h2>
+      <p><a style="padding: 5px;color: grey;font-size: 13px;text-decoration: none" href="https://www.w3schools.com/">W3 Schools</a></p>
+      <p><a style="padding: 5px;color: grey;font-size: 13px;text-decoration: none" href="https://www.tutorialspoint.com/html/index.htm">Tutorialspoint</a></p>
+      <p><a style="padding: 5px;color: grey;font-size: 13px;text-decoration: none" href="https://www.javatpoint.com/">Javapoint</a></p>
+      <p><a style="padding: 5px;color: grey;font-size: 13px;text-decoration: none" href="Test.html">Give Test</a></p>
+</li>
+      <li><h2 style="font-family: Agency FB;color: grey;font-size: 20px">About</h2>
+        <p style="color: grey ;padding: 10px;font-size: 13px">
+        This is a prototype of Learning System designed<br> by &copy;Dipesh Tiwari 
+        </p></li>
+        <li><h2 style="font-family: Agency FB;color: grey ;font-size: 20px">Headquarter</h2>
+          <p style="color: grey ;padding: 10px;font-size: 13px">
+                 LPU
+          </p><br><br>
+          <p style="font-size: 13px;color: grey;text-align:center;">&copy;Dipesh Tiwari</p>
+        </li>
+        <li><h2 style="font-family: Agency FB;color: grey;font-size: 20px">Contact Us</h2><p style="color: grey ;padding:10px;font-size: 13px">
+         &#x260E; 123-456-789
+      </p></li>
+        <li><a href="FAQs.html" target="_blank" style="font-family: Agency FB;color: grey"><h2 style="font-size: 20px">FAQs</h2></a></li>
+    </ul>
+    <ul>
+      <li style="font-family: Agency FB;font-size: 18px;color:grey;"><b>Feedback</b><br>
+      <p>
+      <textarea rows="3" cols="30" style="font-size: 15px;margin:5px;border:2px solid black;background: #3c3c3c;color:grey">Enter your valuable feedback here</textarea>
+      </p>
+      <p><input type="submit" id="refresh" style="background: #3c3c3c;color: white;padding: 5px 5px" onclick="if(!alert('Thanks for giving us your valuable feedback')){window.location.reload();}">
+      </p>
+      </li>
+    </ul>
+</div>
+</footer>
+</body>
+</html>
